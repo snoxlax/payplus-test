@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ZIvc8VFHLRI4K58Lm6CV5",
+    "email": "vlad@gmail.com",
+    "password": "$2b$10$NNihaXK3/.yB0xqrcvPJYORjRAnG4912l1ssHVBcOwt5v.d0Sa7Ue",
+    "name": "vlad",
+    "idNumber": "123456789",
+    "createdAt": "2025-10-05T09:34:10.739Z"
+  },
+  {
+    "id": "jjcuVqxhtplKoOSodpvcV",
+    "email": "bob@gmail.com",
+    "password": "$2b$10$YgK.R3z/Dh2Kr533uqjiCeTJrtvGgrhY0n.ARehmIMKwHkmROm6zS",
+    "name": "Bob",
+    "idNumber": "223456789",
+    "createdAt": "2025-10-05T09:42:25.621Z"
+  }
+]

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JWT Demo</title>
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Customer Management</h1>
+        <div
+          id="userInfo"
+          class="user-info"
+          style="display: none"
+        >
+          <span>
+            Welcome,
+            <strong id="userName"></strong>
+            !
+          </span>
+          <button
+            id="signoutBtn"
+            class="btn btn-secondary"
+          >
+            Sign Out
+          </button>
+        </div>
+      </header>
+
+      <nav>
+        <a
+          href="signup.html"
+          class="btn btn-primary"
+        >
+          Sign Up
+        </a>
+        <a
+          href="signin.html"
+          class="btn btn-primary"
+        >
+          Sign In
+        </a>
+        <button
+          id="viewCustomers"
+          class="btn btn-success active"
+        >
+          👥 View My Customers
+        </button>
+        <button
+          id="getUserInfo"
+          class="btn btn-info"
+        >
+          Get My Info
+        </button>
+        <button
+          id="getAllUsers"
+          class="btn btn-warning"
+        >
+          View All Users
+        </button>
+        <button
+          id="toggleCustomerForm"
+          class="btn btn-primary"
+        >
+          Add Customer
+        </button>
+      </nav>
+
+      <main>
+        <!-- Add Customer Form -->
+        <div
+          id="customerForm"
+          class="customer-form"
+          style="display: none"
+        >
+          <h3>Add New Customer</h3>
+          <form id="addCustomerForm">
+            <div class="form-group">
+              <label for="customerName">Name *</label>
+              <input
+                id="customerName"
+                type="text"
+                placeholder="Enter customer name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="customerEmail">Email *</label>
+              <input
+                id="customerEmail"
+                type="email"
+                placeholder="Enter customer email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="customerPhone">Phone</label>
+              <input
+                id="customerPhone"
+                type="tel"
+                placeholder="Enter customer phone"
+              />
+            </div>
+            <div class="form-group">
+              <label for="customerCompany">Company</label>
+              <input
+                id="customerCompany"
+                type="text"
+                placeholder="Enter customer company"
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary"
+            >
+              Add Customer
+            </button>
+          </form>
+        </div>
+
+        <div
+          id="output"
+          class="output"
+        ></div>
+      </main>
+    </div>
+
+    <script src="js/customers.js"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up - JWT Demo</title>
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Sign Up</h1>
+        <a
+          href="index.html"
+          class="btn btn-secondary"
+        >
+          ← Back to Home
+        </a>
+      </header>
+
+      <main>
+        <form
+          id="signupForm"
+          class="auth-form"
+        >
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+              id="password"
+              type="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input
+              id="confirmPassword"
+              type="password"
+              placeholder="Confirm your password"
+              required
+            />
+            <small
+              id="passwordMatchText"
+              class="form-help"
+            ></small>
+          </div>
+
+          <div class="form-group">
+            <label for="idNumber">ID Number:</label>
+            <input
+              id="idNumber"
+              type="text"
+              placeholder="Enter your 9-digit ID number"
+              pattern="[0-9]{9}"
+              maxlength="9"
+              required
+            />
+            <small class="form-help">Must be exactly 9 digits</small>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+          >
+            Sign Up
+          </button>
+        </form>
+
+        <div
+          id="output"
+          class="output"
+        ></div>
+      </main>
+    </div>
+
+    <script src="js/signup.js"></script>
+  </body>
+</html>
